@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1 align="center">Student Registration</h1>
+    <hr>
+
+    <!--Registration Form-->
+    <form method="post" action="submit.html">
+
+        <!--Full Name-->
+        <p>
+            <lable>Full Name</lable>
+            <input type="text" name="fullname" placeholder="Enter your full name" required>
+        </p>
+
+        <!--Email with validation-->
+        <p>
+            <lable>Email:</lable>
+            <input type="email" name="email" placeholder="Enter valid Email address" required>
+        </p>
+
+        <!--password-->
+        <p>
+            <lable>Password</lable>
+            <input type="password" name="password" placeholder="Enter password" required>
+        </p>
+
+        <!--Gender(Radio Button)-->
+        <p>
+            <lable>Gender:</lable>
+            <input type="radio" name="gender" value="male" required> Male 
+            <input type="radio" name="gender" value="female"> Female 
+        </p>
+
+        <!--course Selection (Dropdown)-->
+        <p>
+            <lable>Course:</lable>
+            <select name="course" requried>
+                <option value="">--Select Course</option>
+                <option Value="btech">B.Tech</option>
+                <option value="bca">BCA</option>
+                <option value="mba">MBA</option>
+                <optopn value="mca">MCA</optopn>
+            </select>
+        </p>
+
+        <p>
+            <!--contact number-->
+            <lable>Contact No:</lable>
+            <input type="tel" name="contact" placeholder="Enter phone number " required>
+        </p>
+
+        <!--Address-->
+        <p>
+            <lable>Address:</lable><br>
+            <textarea name="address" rows="2" column="20" placeholder="Enter your address" requried></textarea>
+        </p>
+
+        <!--Submit or Reset-->
+        <p>
+            <input type="submit" value="Register">
+            <input type="reset" value="clear">
+        </p>
+    </form>
+    <hr>
+    <p align="center">&copy;2025 Student Registration Portal</p>
+</body>
+</html>
