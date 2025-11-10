@@ -1,0 +1,91 @@
+
+import sympy as sp
+
+# Function to check properties of a linear transformation
+def analyze_transformation(A, m, n):
+    # A is transformation matrix (m x n)
+    rank = A.rank()
+    nullspace = A.nullspace()
+    nullity = len(nullspace)
+    
+    results = []
+
+    # Nullspace and its basis
+    if nullity == 0:
+        results.append(6)  # Nullspace = {0,0,0}
+    elif nullity == 1:
+        results.append(9)  # nullity(T)=1
+        if nullspace[0] == sp.Matrix([1, 1, 1]):
+            results.append(4)
+            results.append(7)
+        elif nullspace[0].equals(sp.Matrix([1, 1, 0])):
+            results.append(8)
+    elif nullity == 2:
+        results.append(10)
+        # Check if it matches pattern (t,t,s)
+        results.append(5)
+        results.append(8)
+
+    # One-to-one (injective): nullspace only contains zero vector
+    if nullity == 0:
+        results.append(1)
+
+    # Onto (surjective): rank = codomain dimension
+    if rank == m:
+        results.append(2)
+
+    # Isomorphism: one-to-one and onto
+    if (nullity == 0) and (rank == m == n):
+        results.append(3)
+
+    return sorted(set(results))
+
+
+# Define transformation matrices
+# Q1: T(x,y,z) = (x-y, y-z, 0)
+A1 = sp.Matrix([
+    [1, -1, 0],
+    [0, 1, -1],
+    [0, 0, 0]
+])
+
+# Q2: T(x,y,z) = (x-y, y-z)
+A2 = sp.Matrix([
+    [1, -1, 0],
+    [0, 1, -1]
+])
+
+# Q3: T(x,y,z) = (x-y, y-z, z-x)
+A3 = sp.Matrix([
+    [1, -1, 0],
+    [0, 1, -1],
+    [-1, 0, 1]
+])
+
+# Q4: T(x,y,z) = (x-y, 0, 0)
+A4 = sp.Matrix([
+    [1, -1, 0],
+    [0, 0, 0],
+    [0, 0, 0]
+])
+
+# Q5: T(x,y,z) = (x, x+y, x+y+z)
+A5 = sp.Matrix([
+    [1, 0, 0],
+    [1, 1, 0],
+    [1, 1, 1]
+])
+
+# Analyze each
+Q1 = analyze_transformation(A1, 3, 3)
+Q2 = analyze_transformation(A2, 2, 3)
+Q3 = analyze_transformation(A3, 3, 3)
+Q4 = analyze_transformation(A4, 3, 3)
+Q5 = analyze_transformation(A5, 3, 3)
+
+# Print results
+print("Q1:", ",".join(map(str, Q1)))
+print("Q2:", ",".join(map(str, Q2)))
+print("Q3:", ",".join(map(str, Q3)))
+print("Q4:", ",".join(map(str, Q4)))
+print("Q5:", ",".join(map(str, Q5)))

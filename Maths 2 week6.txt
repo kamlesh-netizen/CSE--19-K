@@ -1,0 +1,87 @@
+
+import sympy as sp
+
+def analyze_transformation(A, m, n):
+    rank = A.rank()
+    nullspace = A.nullspace()
+    nullity = len(nullspace)
+    
+    results = []
+
+ 
+    if nullity == 0:
+        results.append(6)  
+    elif nullity == 1:
+        results.append(9)  
+        if nullspace[0] == sp.Matrix([1, 1, 1]):
+            results.append(4)
+            results.append(7)
+        elif nullspace[0].equals(sp.Matrix([1, 1, 0])):
+            results.append(8)
+    elif nullity == 2:
+        results.append(10)
+        
+        results.append(5)
+        results.append(8)
+
+    
+    if nullity == 0:
+        results.append(1)
+
+    if rank == m:
+        results.append(2)
+
+    
+    if (nullity == 0) and (rank == m == n):
+        results.append(3)
+
+    return sorted(set(results))
+
+
+
+A1 = sp.Matrix([
+    [1, -1, 0],
+    [0, 1, -1],
+    [0, 0, 0]
+])
+
+
+A2 = sp.Matrix([
+    [1, -1, 0],
+    [0, 1, -1]
+])
+
+
+A3 = sp.Matrix([
+    [1, -1, 0],
+    [0, 1, -1],
+    [-1, 0, 1]
+])
+
+
+A4 = sp.Matrix([
+    [1, -1, 0],
+    [0, 0, 0],
+    [0, 0, 0]
+])
+
+
+A5 = sp.Matrix([
+    [1, 0, 0],
+    [1, 1, 0],
+    [1, 1, 1]
+])
+
+
+Q1 = analyze_transformation(A1, 3, 3)
+Q2 = analyze_transformation(A2, 2, 3)
+Q3 = analyze_transformation(A3, 3, 3)
+Q4 = analyze_transformation(A4, 3, 3)
+Q5 = analyze_transformation(A5, 3, 3)
+
+
+print("Q1:", ",".join(map(str, Q1)))
+print("Q2:", ",".join(map(str, Q2)))
+print("Q3:", ",".join(map(str, Q3)))
+print("Q4:", ",".join(map(str, Q4)))
+print("Q5:", ",".join(map(str, Q5)))
