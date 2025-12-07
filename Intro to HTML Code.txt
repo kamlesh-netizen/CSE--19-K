@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction To HTML</title>
+</head>
+<body>
+    <h1>IIT Madras</h1>
+    <p>Course Introduction</p>
+    <h2>Undargraduate</h2>
+    <ol>
+        <li>Bachalore of Technology</li>
+        <ul>
+            <li>Btech in computer science</li>
+            <li>Btech in Electronics </li>
+            <li>Btech in Electrical</li>
+            <li>Btech in Mechanical</li>
+            <li>Btech in Civil</li>
+        </ul>
+        <li>Bachalore of science</li>
+        <ul>
+            <li>BS in Data Science</li>
+            <li>BS in Electronics </li>
+        </ul>
+
+    </ol>
+    <h2>Postgraduate</h2>
+    <ol>
+        <li>Master of Technology</li>
+        <ul>
+            <li>Mtech in CSE</li>
+            <li>Mtech in ECE</li>
+            <li>Mtech in EE</li>
+            <li>Mtech in Mechanical</li>
+            <li>Mtech in civil</li>
+        </ul>
+
+        <li>Master of Science</l1>
+        <ul>
+            <li>MS in Data science</li>
+            <li>Ms in Electronics and semiconductor</li>
+        </ul>
+    </ol>
+    <h2>Best Cars Company in the World</h2>
+    <ol>
+        <li>BMW</li>
+        <ul>
+            <li>BMW M5</li>
+            <img src="https://cdni.autocarindia.com/ExtraImages/20241121061126_Untitled%20design%20_61_.jpg" alt="BMW M5" width="200px" height="200px">
+            <li>BMW M340i</li>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAkCKD3-N28yghhtCRHfL2KaL2Z2U0R-aKag&s" alt="BMW M340i">
+            <li>BMW X7</li>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc8SF25DukSEQYWK4XwLx8ThsYSPJnKw4j_Q&s" alt="BMW X7" width="200px" height="200px">
+        </ul>
+        <li>Mercedes Benz</li>
+        <ul>
+            <li>Mercedes Benz S-Class</li>
+            <img sec="https://media.ed.edmunds-media.com/mercedes-benz/s-class/2025/oem/2025_mercedes-benz_s-class_sedan_amg-s-63-e-performance_fq_oem_1_1600.jpg" alt="Mercedes" width="200px" height="200px">
+            <li>Mercedes Maybach</li>
+            <li>Mercedes G-Class</li>
+        </ul>
+        <li>Porsche</li>
+        <ul>
+            <li>Porsche Taycan</li>
+            <li>Porsche Macan</li>
+            <li>Porsche 911</li>
+            <img src="https://media.ed.edmunds-media.com/porsche/911/2025/oem/2025_porsche_911_coupe_carrera-4-gts_fq_oem_1_1600.jpg" alt="Porsche" width="200px" height="200px">
+        </ul>
+        <li>Ferrari</li>
+        <ul>
+            <li>Ferrari 250 GTO</li>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmjt3GwviTezx3WwEXEwCNsu_D9zRLOdR0GA&s" alt="Ferrari" width="200px" height="200px">
+            <li>Ferrari F40</li>
+            <li>Ferrari Dino 246 GT</li>
+        </ul>
+        <li>Audi</li>
+        <ul>
+            <li>Audi A4</li>
+            <li>Audi A6</li>
+            <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Audi/A6/10552/1700631019657/rear-left-view-121.jpg" alt="Audi" width="200px" height="200px">
+
+        </ul>
+        <li>BYD</li>
+        <ul>
+            <li>Atto 3</li>
+            <li>BYD Seal</li>
+            <img src="https://images.hindustantimes.com/auto/img/2024/08/13/1600x900/BYD_Seal_1723543758021_1723543758191.png" alt="BYD" width="200px" height="200px">
+            <li>BYD Han EV</li>
+            
+        </ul>
+        <li>TATA</li>
+        <ul>
+            <li>Safari</li>
+            <li>Curvv</li>
+            <li>Sierra</li>
+            <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Tata/Sierra/13043/1764151065529/front-left-side-47.jpg" width="200px" height="200px">
+        </ul>
+        <li>TOYOTA</li>
+        <ul>
+            <li>Innova Crysta</li>
+            <li>Fortuner</li>
+            <li>Land Cruiser </li>
+            <img src="https://cdn-s3.autocarindia.com/Toyota/land-cruiser/_AAB1000.JPG?w=640&q=75" width="200px" height="200px">
+        </ul>
+        <li>Mahindra</li>
+        <ul>
+            <li>Thar </li>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCPnNPGJ3KTXISI3w19A02oT3wsQODKPFcxA&s" width="200px" height="200px">
+            <li>XUV700</li>
+            <li>Scorpio</li>
+        </ul>
+    </ol>
+    
+</body>
+</html>
