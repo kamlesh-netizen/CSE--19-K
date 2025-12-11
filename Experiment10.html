@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>True Mart</title>
+
+<style>
+
+    body{
+        margin:0;
+        font-family:Arial, sans-serif;
+    }
+
+/* NAVBAR */
+    nav{
+       background:#111;
+       color:white;
+       padding:12px 25px;
+       display:flex;
+       justify-content:space-between;
+       align-items:center;
+    }
+
+    .logo{
+
+        font-size:22px;
+        font-weight:bold;
+    }
+
+    .menu{
+        list-style:none;
+        display:flex;
+        gap:40px;
+        margin:0;
+        padding:0;
+    }
+
+    .menu li a{
+        color:white;
+        text-decoration:none;
+        font-size:15px;
+    }
+
+    .right{
+        display:flex;
+        align-items:center;
+        gap:20px;
+        font-size:15px;
+     }
+
+ /* HAMBURGER (for responsive) */
+    .hamburger{
+        display:none;
+        font-size:26px;
+        cursor:pointer;
+    }
+
+@media(max-width: 768px){
+        .menu{
+            display:none;
+            flex-direction:column;
+            background:#222;
+            width:100%;
+            padding:20px;
+        }
+
+        .menu.show{
+            display:flex;
+        }
+
+        .hamburger{
+            display:block;
+        }
+        
+        .right{
+            display:none;
+        }
+        }
+</style>
+
+<script>
+function toggleMenu(){
+    document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">$True-Mart$</div>
+
+    <ul class="menu" id="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Hot Deals</a></li>
+        <li><a href="#">Info</a></li>
+    </ul>
+
+    <div class="right">
+         Cart 🛒
+         <b>Login</b>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+</nav>
+
+<h2 style="margin-left:20px; margin-top:20px;">Welcome to True Mart!</h2>
+<p style="margin-left:20px;">Providing Quality Products is Our Top Priority.</p>
+
+</body>
+</html>
