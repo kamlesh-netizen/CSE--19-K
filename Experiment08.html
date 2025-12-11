@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile Cards</title>
+
+     <style>
+      body {
+         font-family: Arial, sans-serif;
+         background: #fff;
+        }
+ /* Main Flex Container */
+          .container {
+             display: flex;
+             justify-content: center; /* Center cards horizontally */
+             align-items: center;  /* Center vertically */
+             flex-direction: row;   /* Row alignment */
+             gap: 30px;   /* Space between cards */
+             margin-top: 50px;
+             padding: 20px;
+             border: 2px solid black;
+            }
+
+/* Individual Card */
+            .card {
+                width: 220px;
+                background: white;
+                padding: 20px;
+                text-align: center;
+                border-radius: 12px;
+                box-shadow: 0 0 8px #ccc;
+            }
+
+        /* Round Circle for Initials */
+        .circle {
+            width: 70px;
+            height: 70px;
+            background: #007bff;
+            border-radius: 50%;
+            color: white;
+            font-size: 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 15px;
+            font-weight: bold;
+         }
+
+        .card h3 {
+             margin: 5px 0;
+            }
+
+        .card p {
+            margin: 3px 0;
+            font-size: 14px;
+            color: #444;
+         }
+    </style>
+</head>
+<body>
+
+<h3 style="padding-left: 20px;">Output:</h3>
+<p style="padding-left: 20px;">Three student profile cards arranged in a row, aligned at the center of the page.</p>
+
+<!-- Main Flex Layout -->
+<div class="container">
+
+     <!-- Card 1 -->
+     <div class="card">
+        <div class="circle">KK</div>
+        <h3>Kamlesh Kumar</h3>
+        <p>B.Tech - CSE-19</p>
+        <p>Roll No: 2025B01010139</p>
+         <p>ABES Enginerring College</p>
+    </div>
+
+      <!-- Card 2 -->
+    <div class="card">
+        <div class="circle">KK</div>
+        <h3>Kamlesh Kumar</h3>
+        <P>B.S-DS</P>
+        <P>Roll No:25F1001285</P>
+        <p>Indian Institute Of Technology Madras</p>
+    </div>
+
+    <div class="card">
+        <div class="circle">SY</div>
+        <h3>Shivani Yadav</h3>
+        <P>Class 10 'A'</P>
+        <P>Roll No:12</P>
+        <p>CSSVM Patna</p>
+    </div>
+    <div class="card">
+        <div class="circle">SY</div>
+        <h3>Shabnam Yadav</h3>
+        <P>B.Tech-CSE</P>
+        <P>Roll No:24IITB001247</P>
+        <p>Indian Institute Of Information Technology Bhagalpur</p>
+    </div>
+    <div class="card">
+        <div class="circle">TA</div>
+        <h3>Tashu Aryan</h3>
+        <P>B.Tech-EEE</P>
+        <P>Roll N0:25N000147</P>
+        <p>National Institute Of Technology Kurukshetra</p>
+    </div>
