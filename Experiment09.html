@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Product Grid</title>
+
+    <style>
+        body {
+             font-family: Arial, sans-serif;
+             background: #ffffff;
+             margin: 0;
+             padding: 20px;
+        }
+
+         h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+/* Outer Border Box */
+        .wrapper {
+            border: 2px solid black;
+            padding: 20px;
+            width: 90%;
+            margin: auto;
+        }
+
+         /* CSS GRID */
+         .card {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Desktop: 4 per row */
+            gap: 20px;
+        }
+
+         /* Product Card */
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 6px #ccc;
+            text-align: center;
+        }
+
+        .card img {
+             width: 60px;
+              margin-bottom: 10px;
+            }
+        .price {
+            margin-top: 5px;
+            font-weight: bold;
+            color: green;
+        }
+
+         /* Tablet Breakpoint (2 per row) */
+        @media (max-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+         /* Mobile Breakpoint (1 per row) */
+          @media (max-width: 800px) {
+            .grid {
+              grid-template-columns: repeat(1, 1fr);
+             }
+             }
+    </style>
+</head>
+<body>
+
+<h3><b>Output:</b></h3>
+<p>• <b>On desktop:</b> 4 product cards per row.</p>
+
+<div class="wrapper">
+    <h2>Responsive Product Grid</h2>
+
+    <div class="grid">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNtSUUTSuPh1o1cG-Qex7LwVG1ne5rJ7Yj9g&s" alt="Product 1">
+            <h3>Sumsung S25 Ultra</h3>
+            <p>High-quality item with great features.</p>
+            <div class="price">₹141999</div>
+        </div>
+
+        <div class="card">
+            <img src="https://www.imagineonline.store/cdn/shop/files/iPhone_15_Pro_Max_Black_Titanium_PDP_Image_Position-1__en-IN_ad326452-186a-484a-99a4-82dc80c280fb.jpg?v=1759734024" alt="Product 2">
+            <h3>Iphone15 Max pro</h3>
+            <p>Durable and stylish for daily use.</p>
+            <div class="price">₹139000</div>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_YiEDCvbqnuoFxVB_cke2cZ5wAbVrfyA-gg&s" alt="product 3">
+            <h3>Iphone 17 air</h3>
+            <p>Slimmest and stylish</p>
+            <div class="price">₹80000</div>
+        </div>
+
+         <div class="card">
+            <img src="https://www.mobileana.com/wp-content/uploads/2025/06/Apple-iPhone-17-Pro-Max-Cosmic-Orange.webp" alt="Product 4">
+            <h3>Iphone 17</h3>
+            <p>Trendy design with premium quality.</p>
+            <div class="price">₹170000</div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+<p>• <b>On tablet (≤1024px):</b> 2 product cards per row.</p>
+
+<p>• <b>On mobile (≤600px):</b> 1 product card per row.</p>
+
+<hr>
+
+<h3>Outcome:</h3>
+<ul>
+    <li>The layout changes based on screen size.</li>
+    <li>Breakpoints ensure readability and user-friendly design across devices.</li>
+    <li>Successfully created a <b>Responsive Product Grid</b> using <b>CSS Grid and media queries</b>.</li>
+</ul>
+
+</body>
+</html>
